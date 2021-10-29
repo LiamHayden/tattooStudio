@@ -1,0 +1,56 @@
+#footerContainer {
+	display: flex;
+}
+
+#footer {
+	display: flex;
+	height: 100vh;
+	width: 100vw;
+	max-width: 100%;
+	background-color: #000;
+	color: #fff;
+}
+
+#details {
+	font-size: 1.5em;
+	width: 50%;
+	float: left;
+}
+
+#appointmentForm {
+	font-size: 1.75em;
+	width: 50%;
+	float: right;
+}
+
+#txtMessage {
+	height: 30%;
+}
+
+#termsAndConditions {
+	background: #000;
+	color: #fff;
+}
+
+.addParagragh {
+	font-size: 0.75em;
+}
+
+.hdrApp {
+	font-size: 0.75em;
+}
+
+.txtInput {
+	width: 60%;
+}
+
+.btnForm {
+	font-size: 0.75em;
+	width: 10em;
+	margin: 0.5em;
+	cursor: pointer;
+	padding: 0.5em;
+	border: none;
+	border-radius: 35px;
+	box-shadow: 1px 1px #000;
+}

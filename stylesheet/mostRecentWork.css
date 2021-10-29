@@ -1,0 +1,46 @@
+#mostRecentWork {
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	max-width: 100%;
+  background-color: #fff;
+}
+
+#hdrMostRecentWork {
+  font-size: 2.25em;
+  text-transform: uppercase;
+  /* padding-top: 3em; */
+	/* border-top: 1px solid #000; */
+}
+
+#topRow {
+  display: flex;
+}
+
+#bottomRow {
+  display: flex;
+}
+
+.recentWork {
+  /* width: 75%;
+  height: 75%; */
+  width: 200px;
+  height: 200px;
+  padding: 1em;
+}
+
+.recentWork:hover {
+  opacity: 50%;
+  transform: scale(1.1);
+  transition: 0.4s ease;
+}
+
+@media screen and (max-width: 970px) {
+  .recentWork {
+    width: 155px;
+    height: 155px;
+  }
+}
