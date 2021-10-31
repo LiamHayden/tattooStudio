@@ -11,7 +11,7 @@
 }
 
 #hdrMostRecentWork {
-  font-size: 2.25em;
+  font-size: 3.25em;
   text-transform: uppercase;
 }
 
@@ -24,9 +24,10 @@
 }
 
 .recentWork {
-  width: 200px;
-  height: 200px;
+  width: 155px;
+  height: 155px;
   padding: 1em;
+  cursor: pointer;
 }
 
 .recentWork:hover {
@@ -35,9 +36,16 @@
   transition: 0.4s ease;
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (min-width: 1280px) {
   .recentWork {
-    width: 155px;
-    height: 155px;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .recentWork {
+    width: 250px;
+    height: 250px;
   }
 }

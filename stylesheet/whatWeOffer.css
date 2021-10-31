@@ -1,7 +1,6 @@
 #whatWeOffer {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	width: 100vw;
 	max-width: 100%;
@@ -9,23 +8,33 @@
 }
 
 #hdrWhatWeOffer {
-  font-size: 2.25em;
+  font-size: 3.25em;
   text-transform: uppercase;
-  padding-top: 7em;
-}
-
-#customTattoos, #allStyles {
-	font-size: 1.25em;
-  text-transform: uppercase;
+  padding: 1.5em 0em;
 }
 
 #container {
 	display: flex;
-	flex-direction: row;
-	align-items: center;
+	justify-content: center;
 	column-gap: 10vw;
-	padding: 0em 1.5em 19em 1.5em;
+	padding: 0em 1.75em 19em 1em;
 	
+}
+
+.miniHeaderContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#customTattoos, #allStyles {
+	text-align: center;
+	margin: 0;
+	width: 300px;
+	text-align: center;
+	font-size: 1.25em;
+  text-transform: uppercase;
+	/* text-decoration: underline; */
 }
 
 #topLine {
