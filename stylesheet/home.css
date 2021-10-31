@@ -3,7 +3,9 @@ body {
 	padding: 0;
 	font-family: 'Raleway';
 	box-sizing: border-box;
-	
+	right: 0;
+	overflow-x: hidden;
+	width: 100vw;
 }
 
 p {
@@ -13,6 +15,10 @@ p {
 #nav-bar {
   overflow: hidden;
   background-color: #000;
+}
+
+#contact {
+	padding-right: 1.5em;
 }
 
 #about {
@@ -26,14 +32,12 @@ p {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	
 }
 
 #header {
 	font-size: 4.5em;
 	text-transform: uppercase;
 	margin-top: 4.5em;
-	/* text-shadow: 1px 1px #5fcfb7; */
 }
 
 #btnAppointment {
@@ -48,6 +52,10 @@ p {
 #btnAppointment:Active {
 	box-shadow: 0 5px #666;
 	transform: translateY(4px);
+}
+
+#termsAndConditions {
+	padding: 0.75em;
 }
 
 .nav-square {

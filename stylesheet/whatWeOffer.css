@@ -3,7 +3,6 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
 	width: 100vw;
 	max-width: 100%;
   background-color: #fff;
@@ -30,13 +29,14 @@
 }
 
 #topLine {
+	margin-top: 3em;
 	width: 100vw;
-	/* width: 305px; */
+	max-width: 100%;
 	border-top: 1px solid #b6b8b6;
 }
 
 #bottomLine {
 	width: 100vw;
-	/* width: 305px; */
+	max-width: 100%;
 	border-top: 1px solid #b6b8b6;
 }

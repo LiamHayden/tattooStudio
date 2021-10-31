@@ -1,0 +1,18 @@
+#nav-bar {
+  overflow: hidden;
+  background-color: #000;
+}
+
+.nav-square {
+	float: right;
+	font-size: 1.5em;
+	color: #5fcfb7;
+	padding: 0.5em;
+	text-decoration: none;
+}
+
+.nav-square:hover {
+	color: #000;
+	background-color: #5fcfb7;
+	transition: 0.8s;
+}

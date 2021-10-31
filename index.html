@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="stylesheet/mostRecentWork.css">
     <link rel="stylesheet" href="stylesheet/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
 		<title>Moksa Tattoo Studio</title>
   </head>
 
   <body>
     <nav id="nav-bar">
-      <a class="nav-square" href="#footer">Contact</a>
+      <a class="nav-square" id="contact" href="html/form.html">Contact</a>
       <a class="nav-square" href="#hdrMostRecentWork">Buy Apparel</a>
-      <a class="nav-square" href="#whatWeOffer">Artists</a>
+      <a class="nav-square" href="html/artists.html">Artists</a>
       <a class="nav-square" href="index.html">Home</a>
     </nav>
 		
@@ -56,37 +56,36 @@
       </div>
     </div>
       <div id="footerContainer">
-      <footer id="footer">
-        <div id="details">
-          <h3 id="hdrAddress">Address</h3>
-          <p class="addParagragh">14a Thomas St,<br>Slippery Green,<br>Wexford.<br>Y35 YP04</p>
-          <h3>Opening Hours</h3>
-          <p class="addParagragh">Tuesday - Saturday<br>11a.m. - 6p.m.</p>
-          <h3>Phone</h3>
-          <p class="addParagragh">087 297 4972</p>
-          <h3>Email</h3>
-          <p class="addParagragh"></p>
-        </div>
 
-        <div id="appointmentForm">
-          <h3 id="hdrBookAppointment">Book Appointment</h3>
-          <h3 class="hdrApp">Name:</h3>
-          <input type="text" class="txtInput">
-          <h3 class="hdrApp">Email:</h3>
-          <input type="text" class="txtInput">
-          <h3 class="hdrApp">Message(Design):</h3>
-          <input type="text" class="txtInput" id="txtMessage">
-          <h3 class="hdrApp">Upload Files</h3>
-          <button type="button">Browse</button><br>
-          <button type="submit" class="btnForm">Submit</button><br>
-          <button type="submit" class="btnForm">Pay Deposit</button>
+          <div id="details">
+            <h3 id="hdrAddress">Address</h3>
+            <p class="addParagragh">14a Thomas St,<br>Slippery Green,<br>Wexford.<br>Y35 YP04</p>
+            <h3>Opening Hours</h3>
+            <p class="addParagragh">Tuesday - Saturday<br>11a.m. - 6p.m.</p>
+            <h3>Phone</h3>
+            <p class="addParagragh">087 297 4972</p>
+            <h3>Email</h3>
+            <p class="addParagragh"></p>
+          </div>
 
-        </div>
+          <div id="appointmentForm">
+            <h3 id="hdrBookAppointment">Book Appointment</h3>
+            <h3 class="hdrApp">Name:</h3>
+            <input type="text" class="txtInput">
+            <h3 class="hdrApp">Email:</h3>
+            <input type="text" class="txtInput">
+            <h3 class="hdrApp">Message(Design):</h3>
+            <textarea id="subject" name="subject" placeholder="Tattoo details.." style="height:200px"></textarea>
+            <h3 class="hdrApp">Upload Files <button type="button" id="browse">Browse</button></h3>
+            <br>
+            <button type="submit" class="btnForm">Submit</button><br>
+            <button type="submit" class="btnForm">Pay Deposit</button>
+          </div>
+
       </div>
       <div id="termsAndConditions">
         <a>Terms & Conditions</a>
       </div>
-    </footer>
   </body>
 
 </html>
