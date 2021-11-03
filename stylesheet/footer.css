@@ -2,7 +2,6 @@
 	display: flex;
 	background-color: #000;
 	color: #fff;
-	
 	padding: 5em;
 }
 
@@ -46,27 +45,4 @@
 	padding: 0.5em;
 	border: none;
 	border-radius: 35px;
-}
-
-@media screen and (min-width: 1280px) {
-  .recentWork {
-    width: 200px;
-    height: 200px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .recentWork {
-    width: 250px;
-    height: 250px;
-  }
-
-	#details {
-    width: 700px;
-    padding-left: 120px;
-  }
-
-	#footerContainer {
-		padding-left: 11em;
-	}
 }

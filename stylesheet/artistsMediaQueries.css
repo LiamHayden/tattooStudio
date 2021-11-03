@@ -1,0 +1,56 @@
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+  #name {
+    margin-left: 1em;
+  }
+}
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+  #divBio {
+    margin: 2em 1em 0em 0em;
+  }
+}
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+  #bioContainer {
+    padding: 3em;
+  }
+}
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+  #divBio {
+    margin: 3.75em 4em 0em 0em;
+  }
+}
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+  #bioContainer {
+    padding-top: 2em;
+  }
+
+  #divBio {
+    margin: 3.75em 9em 0em 0em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #iconContainer {
+    padding-right: 5em;
+  }
+
+  #avatar {
+    width: 350px;
+  }
+
+  #divBio {
+    padding-left: 5em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  
+}

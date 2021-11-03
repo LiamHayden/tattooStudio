@@ -35,17 +35,3 @@
   transform: scale(1.1);
   transition: 0.4s ease;
 }
-
-@media screen and (min-width: 1280px) {
-  .recentWork {
-    width: 200px;
-    height: 200px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .recentWork {
-    width: 250px;
-    height: 250px;
-  }
-}

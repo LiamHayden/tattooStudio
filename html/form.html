@@ -3,6 +3,7 @@
   <head>
     <meta>
     <link rel="stylesheet" href="../stylesheet/form.css">
+		<link rel="stylesheet" href="../stylesheet/formMediaQueries.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
@@ -43,21 +44,23 @@
 					<textarea id="subject" name="subject" placeholder="Tattoo details.." style="height:200px"></textarea>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-25">
+			<div class="row" id="uploadContainer">
+				<div class="col-25" id="uploadFiles">
 					<label for="browse">Upload files</label>
 				</div>
-				<div class="col-75">
+				<div class="col-75" id="browseBtn">
 					<input type="button" value="Browse" id="browse" name="browse">
 				</div>
 			</div>
 			<br>
-			<div class="row">
-				<input type="submit" value="Submit">
-			</div>
-			<br>
-			<div class="row">
-				<input type="submit" value="Pay Deposit">
+			<div id="btnContainer">
+				<div class="row">
+					<input type="submit" value="Submit" id="btnSubmit">
+				</div>
+				<br>
+				<div class="row  btn">
+					<input type="submit" value="Pay Deposit" id="btnDeposit">
+				</div>
 			</div>
 			</form>
 		</div>
