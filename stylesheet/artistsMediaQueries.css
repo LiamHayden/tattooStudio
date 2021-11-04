@@ -15,14 +15,14 @@
  /* Medium devices (landscape tablets, 768px and up) */
  @media only screen and (min-width: 768px) {
   #bioContainer {
-    padding: 3em;
+    
   }
 }
  
  /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (min-width: 992px) {
   #divBio {
-    margin: 3.75em 4em 0em 0em;
+    
   }
 }
  
@@ -30,16 +30,17 @@
  @media only screen and (min-width: 1200px) {
   #bioContainer {
     padding-top: 2em;
+    gap: 150px;
   }
 
   #divBio {
-    margin: 3.75em 9em 0em 0em;
+
   }
 }
 
 @media screen and (min-width: 1280px) {
   #iconContainer {
-    padding-right: 5em;
+
   }
 
   #avatar {
@@ -47,7 +48,7 @@
   }
 
   #divBio {
-    padding-left: 5em;
+
   }
 }
 
