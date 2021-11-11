@@ -1,22 +1,18 @@
 #footerContainer {
 	display: flex;
+	gap: 500px;
+	justify-content: center;
 	background-color: #000;
-	color: #fff;
+	color: #b6b8b6;
 	padding: 5em;
 }
 
 #details {
-	display: flex;
-	flex-direction: column;
 	font-size: 1.5em;
-	width: 50vw;
 }
 
 #appointmentForm {
-	display: flex;
-	flex-direction: column;
 	font-size: 1.75em;
-	width: 30vw;
 }
 
 #browse {
@@ -25,7 +21,7 @@
 
 #termsAndConditions {
 	background: #000;
-	color: #fff;
+	color: #b6b8b6;
 }
 
 .addParagragh {

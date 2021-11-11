@@ -21,17 +21,16 @@ p {
 }
 
 #nav-bar {
-  justify-content: center;
-  border-bottom: 1px solid grey;
+  
 }
 
 .nav-square {
-  font-size: 1.25em;
+  
 }
 
 #header {
   font-size: 3em;
-  color: grey;
+  color: #b6b8b6;
   text-align: center;
   padding: 50px 0;
 }
@@ -44,7 +43,7 @@ p {
   display: flex;
   justify-content: center;
   gap: 30px;
-  color: grey;
+  color: #b6b8b6;
 }
 
 .col {
@@ -64,7 +63,7 @@ p {
 
 .line-break {
   width: 20px;
-  border-top: 1px solid grey;
+  border-top: 1px solid #b6b8b6;
 }
 
 img:hover {

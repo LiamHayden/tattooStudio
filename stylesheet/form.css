@@ -16,27 +16,17 @@ body {
 	background-size: cover;
 }
 
-#nav-bar {
-  overflow: hidden;
-  background-color: #000;
-}
-
-.nav-square {
-	float: right;
-	font-size: 1.5em;
-	color: #5fcfb7;
-	padding: 0.5em;
-	text-decoration: none;
-}
-
-.nav-square:hover {
-	color: #000;
-	background-color: #5fcfb7;
-	transition: 0.8s;
+form {
+	width: 750px;
 }
 
 #hdrBookAppointment {
+	text-align: center;
+	padding: 1em 0em;
+}
 
+#btnContainer {
+	padding-top: 1em;
 }
 
 .txtInput {
@@ -73,11 +63,19 @@ input[type=submit]:active {
 }
 
 .container {
+	width: 800px;
   border-radius: 5px;
   background-color: rgba(214, 214, 214, 0.8);
   padding: 20px;
 	margin: 100px;
 	height: 70vh;
+}
+
+.outerContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .col-25 {

@@ -12,13 +12,6 @@ p {
 	font-size: 0.95em;
 }
 
-#nav-bar {
-	display: flex;
-	justify-content: flex-end;
-  overflow: hidden;
-  background-color: #000;
-}
-
 #contact {
 	padding-right: 1.5em;
 }
@@ -28,9 +21,8 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 93.9vh;
-	width: 100vw;
-	max-width: 100%;
+	height: 100vh;
+	/* height: 93.9vh; */
 	background-image: url('../images/tattooStudio.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -59,18 +51,4 @@ p {
 
 #termsAndConditions {
 	padding: 0.75em;
-}
-
-.nav-square {
-	float: right;
-	font-size: 1.5em;
-	color: #5fcfb7;
-	padding: 0.5em;
-	text-decoration: none;
-}
-
-.nav-square:hover {
-	color: #000;
-	background-color: #5fcfb7;
-	transition: 0.8s;
 }
