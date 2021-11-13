@@ -5,6 +5,7 @@
 	<meta>
 	<link rel="stylesheet" href="../stylesheet/form.css">
 	<link rel="stylesheet" href="../stylesheet/formMediaQueries.css">
+	<link rel="stylesheet" href="../stylesheet/navbar.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
@@ -13,58 +14,60 @@
 
 <body>
 	<nav id="nav-bar">
-		<a class="nav-square" href="form.html">Contact</a>
-		<a class="nav-square" href="#hdrMostRecentWork">Buy Apparel</a>
-		<a class="nav-square" href="artists.html">Artists</a>
 		<a class="nav-square" href="../index.html">Home</a>
+		<a class="nav-square" href="artists.html">Artists</a>
+		<a class="nav-square" href="buyApparel.html">Buy Apparel</a>
+		<a class="nav-square" id="contact" href="form.html">Contact</a>
 	</nav>
 
-	<div class="container">
-		<h1 id="hdrBookAppointment">Book Appointment</h1>
-		<form action="#">
-			<div class="row">
-				<div class="col-25">
-					<label for="fname">Name</label>
-				</div>
-				<div class="col-75">
-					<input type="text" id="fname" name="firstname" placeholder="Your name..">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-25">
-					<label for="lname">Email</label>
-				</div>
-				<div class="col-75">
-					<input type="text" id="lname" name="lastname" placeholder="Your email..">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-25">
-					<label for="subject">Message</label>
-				</div>
-				<div class="col-75">
-					<textarea id="subject" name="subject" placeholder="Tattoo details.." style="height:200px"></textarea>
-				</div>
-			</div>
-			<div class="row" id="uploadContainer">
-				<div class="col-25" id="uploadFiles">
-					<label for="browse">Upload files</label>
-				</div>
-				<div class="col-75" id="browseBtn">
-					<input type="button" value="Browse" id="browse" name="browse">
-				</div>
-			</div>
-			<br>
-			<div id="btnContainer">
+	<div class="outerContainer">
+		<div class="container">
+			<h1 id="hdrBookAppointment">Book Appointment</h1>
+			<form action="#">
 				<div class="row">
-					<input type="submit" value="Submit" id="btnSubmit">
+					<div class="col-25">
+						<label for="fname">Name</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="fname" name="firstname" placeholder="Your name..">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="lname">Email</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="lname" name="lastname" placeholder="Your email..">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<label for="subject">Message</label>
+					</div>
+					<div class="col-75">
+						<textarea id="subject" name="subject" placeholder="Tattoo details.." style="height:200px"></textarea>
+					</div>
+				</div>
+				<div class="row" id="uploadContainer">
+					<div class="col-25" id="uploadFiles">
+						<label for="browse">Upload files</label>
+					</div>
+					<div class="col-75" id="browseBtn">
+						<input type="button" value="Browse" id="browse" name="browse">
+					</div>
 				</div>
 				<br>
-				<div class="row  btn">
-					<input type="submit" value="Pay Deposit" id="btnDeposit">
+				<div id="btnContainer">
+					<div class="row">
+						<input type="submit" value="Submit" id="btnSubmit">
+					</div>
+					<br>
+					<div class="row  btn">
+						<input type="submit" value="Pay Deposit" id="btnDeposit">
+					</div>
 				</div>
-			</div>
-		</form>
+			</form>
+		</div>
 	</div>
 </body>
 
