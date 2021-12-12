@@ -1,8 +1,11 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
   margin: 0;
 	padding: 0;
 	font-family: 'Raleway';
-	box-sizing: border-box;
 	right: 0;
 	overflow-x: hidden;
 	width: 100vw;
@@ -22,7 +25,6 @@ p {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	/* height: 93.9vh; */
 	background-image: url('../images/tattooStudio.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -30,9 +32,8 @@ p {
 }
 
 #header {
-	font-size: 4.5em;
+	font-size: 7vw;
 	text-transform: uppercase;
-	margin-top: 4.5em;
 }
 
 #btnAppointment {
@@ -49,6 +50,112 @@ p {
 	transform: translateY(4px);
 }
 
+/* What We Offer */
+#whatWeOffer {
+	display: grid;
+	margin-top: 3em;
+	border-top: 0.5px solid #b6b8b6;
+	border-bottom: 0.5px solid #b6b8b6;
+	height: 100vh;
+  background-color: #fff;
+	text-align: center;
+}
+
+#hdrWhatWeOffer {
+	margin-top: 100px;
+  font-size: 7vw;
+  text-transform: uppercase;
+}
+
+#customTattoos, #allStyles {
+	font-size: 1.25em;
+  text-transform: uppercase;
+}
+
+#paraCustomTattoos {
+	padding-bottom: 3em;
+}
+
+.paragraph {
+	margin: 0em 1.75em;
+}
+
+/* Recent Work */
+#mostRecentWork {
+  display: grid;
+	text-align: center;
+	justify-content: center;
+	margin-top: 3em;
+  background-color: #fff;
+  
+}
+
+#hdrMostRecentWork {
+  font-size: 7vw;
+  text-transform: uppercase;
+}
+
+.recentWork {
+	justify-content: center;
+  width: 350px;
+  height: 350px;
+  margin: 1em;
+  cursor: pointer;
+}
+
+.recentWork:hover {
+  box-sizing: border-box;
+  opacity: 50%;
+  border: 3px solid #5fcfb7;
+  transition: 0.4s ease;
+}
+
+/* Footer */
+#footerContainer {
+	display: grid;
+	text-align: center;
+	justify-content: center;
+	background-color: #000;
+	color: #b6b8b6;
+	/* padding: 5em; */
+	margin-top: 3em;
+}
+
+#details {
+	font-size: 1.5em;
+	padding-bottom: 2em;
+}
+
+#appointmentForm {
+	font-size: 1.75em;
+}
+
+#browse {
+	width: 60px;
+	margin-left: 1em;
+}
+
 #termsAndConditions {
+	background: #000;
+	color: #b6b8b6;
 	padding: 0.75em;
+}
+
+.addParagragh {
+	font-size: 0.75em;
+	margin: 0;
+}
+
+.hdrApp {
+	font-size: 0.75em;
+}
+
+.btnForm {
+	font-size: 0.55em;
+	width: 165px;
+	margin: 0.5em;
+	cursor: pointer;
+	padding: 0.5em;
+	border: none;
+	border-radius: 35px;
 }
