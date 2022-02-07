@@ -1,47 +1,83 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta>
-    <title>Buy Apparel</title>
-    <link rel="stylesheet" href="../stylesheet/navbar.css">
-    <link rel="stylesheet" href="../stylesheet/buyApparel.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
-  </head>
-  <body>
-    <nav id="nav-bar">
-      <a class="nav-square" href="../index.html">Home</a>
-      <a class="nav-square" href="artists.html">Artists</a>
-      <a class="nav-square" href="buyApparel.html">Buy Apparel</a>
-      <a class="nav-square" id="contact" href="form.html">Contact</a>
-    </nav>
 
-    <div class="container">
-      <h1 id="header">Moksa Tattoo Studio</h1>
-      <div class="row">
-        <div class="col">
-          <img src="../images/tshirt.jpg">
-          <p class="title">T-Shirt</p>
-          <span class="line-break"></span>
-          <p class="price">$19.99</p>
-          <p class="sold-out"></p>
-        </div>
-        <div class="col">
-          <img  src="../images/jumper.jpg">
-          <p class="title">Jumper</p>
-          <span class="line-break"></span>
-          <p class="price">$34.99</p>
-          <p class="sold-out"></p>
-        </div>
-        <div class="col">
-          <img src="../images/print.jpg">
-          <p class="title">Print</p>
-          <span class="line-break"></span>
-          <p class="price">$19.99</p>
-          <p class="sold-out"></p>
-        </div>
+<head>
+  <meta>
+  <title>Buy Apparel</title>
+  <link rel="stylesheet" href="../stylesheet/navbar.css">
+  <link rel="stylesheet" href="../stylesheet/buyApparel.css">
+  <link rel="stylesheet" href="/stylesheet/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav id="nav-bar">
+    <a class="nav-square" href="../index.html">Home</a>
+    <a class="nav-square" href="artists.html">Artists</a>
+    <a class="nav-square" href="buyApparel.html">Buy Apparel</a>
+    <a class="nav-square" id="contact" href="form.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h1 id="header">Moksa Tattoo Studio</h1>
+    <div class="col">
+      <img src="../images/tshirt.jpg">
+      <p class="title">T-Shirt</p>
+      <span class="line-break"></span>
+      <p class="price">$19.99</p>
+      <p class="sold-out"></p>
+    </div>
+    <div class="col">
+      <img src="../images/jumper.jpg">
+      <p class="title">Jumper</p>
+      <span class="line-break"></span>
+      <p class="price">$34.99</p>
+      <p class="sold-out"></p>
+    </div>
+    <div class="col">
+      <img src="../images/print.jpg">
+      <p class="title">Print</p>
+      <span class="line-break"></span>
+      <p class="price">$19.99</p>
+      <p class="sold-out"></p>
+
+    </div>
+    <span class="line-seperator"></span>
+  </div>
+  <div id="footerContainer">
+    <div id="details">
+      <div>
+        <h3 id="hdrAddress" class="detailsH3">Address</h3>
+        <p class="addParagragh">14a Thomas St,<br>Slippery Green,<br>Wexford.<br>Y35 YP04</p>
+      </div>
+      <div>
+        <h3 class="detailsH3">Opening Hours</h3>
+        <p class="addParagragh">Tuesday - Saturday<br>11a.m. - 6p.m.</p>
+      </div>
+      <div>
+        <h3 class="detailsH3">Phone</h3>
+        <p class="addParagragh">087 297 4972</p>
       </div>
     </div>
-  </body>
+
+    <div id="appointmentForm">
+      <h3 id="hdrBookAppointment">Book Appointment</h3>
+      <h3 class="hdrApp">Name:</h3>
+      <input type="text" class="txtInput">
+      <h3 class="hdrApp">Email:</h3>
+      <input type="text" class="txtInput">
+      <h3 class="hdrApp" id="message">Message(Design):</h3>
+      <textarea id="subject" name="subject" placeholder="Tattoo details.." style="height:200px"></textarea>
+      <h3 class="hdrApp" id="uploadFiles">Tattoo Inspiration<button type="button" id="browse">Browse</button></h3>
+      <br>
+      <div id="formBtnDiv">
+        <button type="submit" class="btnForm">Submit</button><br>
+        <button type="submit" class="btnForm">Pay Deposit</button>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

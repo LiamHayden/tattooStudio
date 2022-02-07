@@ -87,7 +87,6 @@ p {
 	justify-content: center;
 	margin-top: 3em;
   background-color: #fff;
-  
 }
 
 #hdrMostRecentWork {
@@ -109,52 +108,48 @@ p {
   transition: 0.4s ease;
 }
 
-/* Footer */
-#footerContainer {
-	display: grid;
-	text-align: center;
-	justify-content: center;
-	background-color: #000;
-	color: #b6b8b6;
-	/* padding: 5em; */
-	margin-top: 3em;
-}
+/* Media Queries */
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
 
-#details {
-	font-size: 1.5em;
-	padding-bottom: 2em;
-}
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
 
-#appointmentForm {
-	font-size: 1.75em;
-}
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
 
-#browse {
-	width: 60px;
-	margin-left: 1em;
-}
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+	p, #customTattoos, #allStyles {
+		font-size: 1.5vw;
+	}
 
-#termsAndConditions {
-	background: #000;
-	color: #b6b8b6;
-	padding: 0.75em;
-}
+	/* Home */
+	
+	#header {
+		font-size: 5vw;
+	}
 
-.addParagragh {
-	font-size: 0.75em;
-	margin: 0;
-}
+	/* What We Offer */
 
-.hdrApp {
-	font-size: 0.75em;
-}
+	#hdrWhatWeOffer, #hdrMostRecentWork {
+		font-size: 4vw;
+		margin-top: 0.5em;
+	}
 
-.btnForm {
-	font-size: 0.55em;
-	width: 165px;
-	margin: 0.5em;
-	cursor: pointer;
-	padding: 0.5em;
-	border: none;
-	border-radius: 35px;
-}
+	/* Recent Work */
+	#mostRecentWork {
+		grid-template-columns: auto auto auto auto;
+		column-gap: 0.5em;
+	}
+
+	#hdrMostRecentWork {
+		grid-column: 1 / 5;
+	}
+ }

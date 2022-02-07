@@ -1,27 +1,28 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
   padding: 0;
   font-family: 'Raleway';
-  box-sizing: border-box;
 	background-color: #fff;
 }
 
+#name {
+	text-align: center;
+}
+
+#bulletPoints {
+	
+}
+
 #bioContainer {
-	display: flex;
+	display: grid;
+	grid-template-columns: auto;
+	justify-content: center;
+	text-align: center;
 	border-bottom: 1px solid #b6b8b6;
-}
-
-#iconContainer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 50%;
-}
-
-#divBio {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
 #name, #work {
@@ -30,7 +31,7 @@ body {
 }
 
 #avatar {
-	padding-top: 1em;
+	padding-top: 3vw;
 }
 
 #icons {
@@ -39,21 +40,20 @@ body {
 
 #avatarImage {
 	max-width: 100%;
+	width: 300px;
 	height: auto;
-	width: 350px;
 	border: 2px solid #000;
 	border-radius: 50%;
 }
 
-#workContainer {
-	display: flex;
-	flex-direction: column;
-	padding: 1em;
+#divBio {
+	text-align: left;
+	
 }
 
-#imageRow {
-	display: flex;
-	
+#workContainer {
+	display: grid;
+	padding: 1em;
 }
 
 #work {
@@ -63,17 +63,16 @@ body {
 #imageRow {
 	display: inherit;
 	justify-content: center;
-	gap: 0.5em;
+	gap: 2vw;
 }
 
 .list {
-	padding: 0.4em;
 	padding-bottom: 3em;
 }
 
 .recentWork {
-	width: 180px;
-	height: 180px;
+	width: 350px;
+	height: 350px;
 	max-width: 100%;
 	cursor: pointer;
 }
@@ -98,13 +97,44 @@ body {
   transition: 0.4s ease;
 }
 
-@media screen and (min-width: 1280px) {
-  #bioContainer {
+/* Media Queries */
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	p {
+		font-size: 1.5vw;
+	}
+
+	#bioContainer {
+		grid-template-columns: auto auto;
+		justify-content: space-evenly;
+		align-content: center;
+		margin: auto;
+	}
+
+	#divBio {
+		padding-top: 4vw;
+	}
+
+	#workContainer {
 		justify-content: center;
-		width: 100%;
-  }
-	#iconContainer {
-		align-items: center;
-		width: 20%;
+	}
+
+	#imageRow {
+		grid-template-columns: auto auto auto;
 	}
 }
