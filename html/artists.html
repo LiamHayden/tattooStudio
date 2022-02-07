@@ -1,25 +1,27 @@
-	<!DOCTYPE html>
-	<html>
-	<head>
-		<meta>
-		<link rel="stylesheet" href="../stylesheet/artists.css">
-		<link rel="stylesheet" href="../stylesheet/navbar.css">
-		<link rel="stylesheet" href="../stylesheet/artistsMediaQueries.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
-		<title>Artists | Moksa Tattoo Studio</title>
-	</head>
-	<body>
-		<nav id="nav-bar">
-      <a class="nav-square" href="../index.html">Home</a>
-      <a class="nav-square" href="artists.html">Artists</a>
-      <a class="nav-square" href="buyApparel.html">Buy Apparel</a>
-      <a class="nav-square" id="contact" href="form.html">Contact</a>
-    </nav>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../stylesheet/artists.css">
+	<link rel="stylesheet" href="/stylesheet/footer.css">
+	<link rel="stylesheet" href="../stylesheet/navbar.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+	<title>Artists | Moksa Tattoo Studio</title>
+</head>
+
+<body>
+	<nav id="nav-bar">
+		<a class="nav-square" href="../index.html">Home</a>
+		<a class="nav-square" href="artists.html">Artists</a>
+		<a class="nav-square" href="buyApparel.html">Buy Apparel</a>
+		<a class="nav-square" id="contact" href="form.html">Contact</a>
+	</nav>
 
 	<div id="bioContainer">
-
 		<div id="iconContainer">
 			<div id="avatar">
 				<img id="avatarImage" src="../images/nirmanAvatar.jpg" alt="Picture of tattoo artist Nirman Kadel">
@@ -32,7 +34,7 @@
 
 		<div id="divBio">
 			<h1 id="name"><u>Nirman Kadel</u></h1>
-			<ul>
+			<ul id="bulletPoints">
 				<li class="list">Tattoo artist from Nepal</li>
 				<li class="list">Currently in Wexford, Ireland</li>
 				<li class="list">Owner of Moksa Tattoo Studio</li>
@@ -52,6 +54,45 @@
 		</div>
 	</div>
 
+	<div id="footerContainer">
+		<div id="details">
+			<div>
+				<h3 id="hdrAddress" class="detailsH3">Address</h3>
+				<p class="addParagragh">14a Thomas St,<br>Slippery Green,<br>Wexford.<br>Y35 YP04</p>
+			</div>
+			<div>
+				<h3 class="detailsH3">Opening Hours</h3>
+				<p class="addParagragh">Tuesday - Saturday<br>11a.m. - 6p.m.</p>
+			</div>
+			<div>
+				<h3 class="detailsH3">Phone</h3>
+				<p class="addParagragh">087 297 4972</p>
+			</div>
+		</div>
+
+		<div id="appointmentForm">
+			<h3 id="hdrBookAppointment">Book Appointment</h3>
+			<div class="section">
+				<h3 class="hdrApp">Name:</h3>
+				<input type="text" class="txtInput">
+			</div>
+			<h3 class="hdrApp">Email:</h3>
+			<input type="text" class="txtInput">
+			<h3 class="hdrApp" id="message">Message(Design):</h3>
+			<textarea id="subject" name="subject" placeholder="Tattoo details.." style="height:200px"></textarea>
+			<h3 class="hdrApp" id="uploadFiles">Tattoo Inspiration<button type="button" id="browse">Browse</button></h3>
+			<br>
+			<div id="formBtnDiv">
+				<button type="submit" class="btnForm">Submit</button><br>
+				<button type="submit" class="btnForm">Pay Deposit</button>
+			</div>
+		</div>
+	</div>
+	<div id="termsAndConditions">
+		<a href="#">Terms & Conditions</a>
+	</div>
+
 	<script src="https://kit.fontawesome.com/261517eee2.js" crossorigin="anonymous"></script>
-	</body>
-	</html>
+</body>
+
+</html>
