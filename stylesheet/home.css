@@ -152,4 +152,29 @@ p {
 	#hdrMostRecentWork {
 		grid-column: 1 / 5;
 	}
+
+	/* Footer */
+	#footerContainer {
+		grid-template-columns: auto auto;
+		justify-content: space-around;
+	}
+
+	#details, #appointmentForm {
+		font-size: 1.5vw;
+	}
+
+	#details {
+		display: grid;
+		align-content: space-around;
+
+	}
+
+	#subject, .txtInput {
+		width: 15vw;
+		font-size: 1.5vw;
+	}
+
+	.btnForm {
+		font-size: 0.75em;
+	}
  }
