@@ -26,10 +26,18 @@
 	margin-left: 1em;
 }
 
+#formBtnDiv {
+	text-align: center;
+}
+
 #termsAndConditions {
 	background: #000;
 	color: #b6b8b6;
 	padding: 0.75em;
+}
+
+#hdrBookAppointment, .detailsH3, .hdrApp {
+	font-size: 5vw;
 }
 
 .addParagragh {
@@ -41,6 +49,10 @@
 	font-size: 0.75em;
 }
 
+.txtInput {
+	width: 53vw;
+}
+
 .btnForm {
 	font-size: 0.55em;
 	width: 165px;
@@ -49,6 +61,18 @@
 	padding: 0.5em;
 	border: none;
 	border-radius: 35px;
+}
+
+/* Media Queries */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.txtInput {
+		width: 40vw;
+	}
+
+	#subject {
+		width: 40vw;
+	}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -69,7 +93,15 @@
 
 	#subject, .txtInput {
 		width: 15vw;
-		font-size: 1.5vw;
+		font-size: 1.45vw;
+	}
+
+	#hdrBookAppointment, .detailsH3, .hdrApp {
+		font-size: 1.65vw;
+	}
+
+	.addParagragh {
+		font-size: 1.45vw;
 	}
 
 	.btnForm {
