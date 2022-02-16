@@ -13,10 +13,6 @@ body {
 	text-align: center;
 }
 
-#bulletPoints {
-	
-}
-
 #bioContainer {
 	display: grid;
 	grid-template-columns: auto;
