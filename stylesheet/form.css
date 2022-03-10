@@ -1,8 +1,5 @@
 * {
   box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-family: 'Raleway';
 }
 
 body {
@@ -10,23 +7,29 @@ body {
 	height: 100vh;
 	width: 100vw;
 	max-width: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: 'Raleway';
 	background-image: url('../images/tattooStudio.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
-form {
-	width: 750px;
-}
-
 #hdrBookAppointment {
 	text-align: center;
-	padding: 1em 0em;
 }
 
-#btnContainer {
-	padding-top: 1em;
+#uploadContainer {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 0.5em;
+	justify-content: left;
+	padding-top: 0.5em;
+}
+
+#btnSubmit {
+	margin-bottom: 1em;
 }
 
 .txtInput {
@@ -34,17 +37,21 @@ form {
 }
 
 input[type=text], select, textarea {
-  width: 100%;
-	max-width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  resize: vertical;
 }
 
 label {
   padding: 12px 12px 12px 0;
-  display: inline-block;
+}
+
+label, #tattooInspiration {
+	padding: 0em;
+}
+
+input[type="text"], #subject {
+	width: 65vw
 }
 
 input[type=submit] {
@@ -54,7 +61,6 @@ input[type=submit] {
 	border: none;
 	border-radius: 35px;
 	box-shadow: 1px 1px #000;
-	float: right;
 }
 
 input[type=submit]:active {
@@ -63,30 +69,24 @@ input[type=submit]:active {
 }
 
 .container {
-	width: 800px;
   border-radius: 5px;
   background-color: rgba(214, 214, 214, 0.8);
   padding: 20px;
-	margin: 100px;
-	height: 70vh;
 }
 
 .outerContainer {
-	display: flex;
-	flex-direction: column;
+	display: grid;
 	justify-content: center;
-	align-items: center;
+	padding-top: 3em;
 }
 
 .col-25 {
-  float: left;
   width: 25%;
   margin-top: 6px;
 }
 
 .col-75 {
-  float: left;
-  width: 75%;
+  width: 45%;
   margin-top: 6px;
 }
 
@@ -94,4 +94,43 @@ input[type=submit]:active {
   content: "";
   display: table;
   clear: both;
+}
+
+/* Media Queries */
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {	
+	#hdrBookAppointment {
+		font-size: 3vw;
+	}
+
+	#btnContainer {
+		display: grid;
+		grid-template-columns: auto auto;
+		justify-content: space-evenly;
+	}
+
+	/* input[type="text"] {
+		width: 40vw
+	} */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	input[type="text"], #subject {
+		width: 45vw
+	}
+
+	.row {
+		padding-left: 0em;
+	}
 }

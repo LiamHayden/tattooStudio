@@ -2,10 +2,11 @@
 <html>
 
 <head>
-	<meta>
-	<link rel="stylesheet" href="../stylesheet/form.css">
-	<link rel="stylesheet" href="../stylesheet/formMediaQueries.css">
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../stylesheet/navbar.css">
+	<link rel="stylesheet" href="../stylesheet/form.css">
+	<link rel="stylesheet" href="/stylesheet/footer.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
@@ -49,26 +50,62 @@
 					</div>
 				</div>
 				<div class="row" id="uploadContainer">
-					<div class="col-25" id="uploadFiles">
-						<label for="browse">Tattoo Inspiration</label>
+					<div id="uploadFiles">
+						<label for="browse" id="tattooInspiration">Tattoo Inspiration</label>
 					</div>
-					<div class="col-75" id="browseBtn">
-						<input type="button" value="Browse" id="browse" name="browse">
+					<div id="browseBtn">
+						<input type="button" value="Browse" id="browseBtn" name="browse">
 					</div>
 				</div>
 				<br>
 				<div id="btnContainer">
-					<div class="row">
+					<div>
 						<input type="submit" value="Submit" id="btnSubmit">
 					</div>
-					<br>
-					<div class="row  btn">
+					<div class="btn">
 						<input type="submit" value="Pay Deposit" id="btnDeposit">
 					</div>
 				</div>
 			</form>
 		</div>
 	</div>
+
+	<!-- Footer -->
+	<div id="footerContainer">
+    <div id="details">
+      <div>
+        <h3 id="hdrAddress" class="detailsH3">Address</h3>
+        <p class="addParagragh">14a Thomas St,<br>Slippery Green,<br>Wexford.<br>Y35 YP04</p>
+      </div>
+      <div>
+        <h3 class="detailsH3">Opening Hours</h3>
+        <p class="addParagragh">Tuesday - Saturday<br>11a.m. - 6p.m.</p>
+      </div>
+      <div>
+        <h3 class="detailsH3">Phone</h3>
+        <p class="addParagragh">087 297 4972</p>
+      </div>
+    </div>
+
+    <div id="appointmentForm">
+      <h3 id="hdrBookAppointment">Book Appointment</h3>
+      <h3 class="hdrApp">Name:</h3>
+      <input type="text" class="txtInput">
+      <h3 class="hdrApp">Email:</h3>
+      <input type="text" class="txtInput">
+      <h3 class="hdrApp" id="message">Message(Design):</h3>
+      <textarea id="subject" name="subject" placeholder="Tattoo details.." style="height:200px"></textarea>
+      <h3 class="hdrApp" id="uploadFiles">Tattoo Inspiration<button type="button" id="browse">Browse</button></h3>
+      <br>
+      <div id="formBtnDiv">
+        <button type="submit" class="btnForm">Submit</button><br>
+        <button type="submit" class="btnForm">Pay Deposit</button>
+      </div>
+    </div>
+  </div>
+  <div id="termsAndConditions">
+    <a href="#">Terms & Conditions</a>
+  </div>
 </body>
 
 </html>
