@@ -1,3 +1,4 @@
+/* Created incase of issues on other pages */
 #footerContainer {
 	display: grid;
 	text-align: center;
@@ -18,7 +19,7 @@
 }
 
 #subject {
-	
+	width: 53vw;
 }
 
 #browse {
@@ -36,7 +37,7 @@
 	padding: 0.75em;
 }
 
-.detailsH3, .hdrApp {
+#hdrBookAppointment, .detailsH3, .hdrApp {
 	font-size: 5vw;
 }
 
@@ -69,6 +70,10 @@
 	.txtInput {
 		width: 40vw;
 	}
+
+	#subject {
+		width: 40vw;
+	}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -87,7 +92,12 @@
 
 	}
 
-	.detailsH3, .hdrApp {
+	#subject, .txtInput {
+		width: 15vw;
+		font-size: 1.45vw;
+	}
+
+	#hdrBookAppointment, .detailsH3, .hdrApp {
 		font-size: 1.65vw;
 	}
 
