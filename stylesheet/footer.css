@@ -14,7 +14,10 @@
 
 #appointmentForm {
 	font-size: 1.75em;
-	text-align: left;
+}
+
+#subject {
+	width: 53vw;
 }
 
 #browse {
@@ -23,7 +26,7 @@
 }
 
 #formBtnDiv {
-	text-align: center;
+	display: flex;
 }
 
 #termsAndConditions {
@@ -32,8 +35,8 @@
 	padding: 0.75em;
 }
 
-.detailsH3, .hdrApp {
-	font-size: 5vw;
+#hdrBookAppointment, .detailsH3, .hdrApp {
+	font-size: 1.5em;
 }
 
 .addParagragh {
@@ -42,6 +45,7 @@
 }
 
 .hdrApp {
+	
 	font-size: 0.75em;
 }
 
@@ -65,6 +69,10 @@
 	.txtInput {
 		width: 40vw;
 	}
+
+	#subject {
+		width: 40vw;
+	}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -73,18 +81,19 @@
 		justify-content: space-around;
 	}
 
-	#details, #appointmentForm {
-		font-size: 1.5vw;
-	}
-
 	#details {
 		display: grid;
 		align-content: space-around;
 
 	}
 
-	.detailsH3, .hdrApp {
-		font-size: 1.65vw;
+	#subject, .txtInput {
+		width: 100%;
+		font-size: 1.45vw;
+	}
+
+	#formBtnDiv {
+		font-size: 0.75em;
 	}
 
 	.addParagragh {
