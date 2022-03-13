@@ -28,6 +28,12 @@ body {
 	padding-top: 0.5em;
 }
 
+#btnContainer {
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-evenly;
+}
+
 #btnSubmit {
 	margin-bottom: 1em;
 }
@@ -96,32 +102,11 @@ input[type=submit]:active {
   clear: both;
 }
 
-/* Media Queries */
- /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) {
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-	
-}
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {	
 	#hdrBookAppointment {
 		font-size: 3vw;
 	}
-
-	#btnContainer {
-		display: grid;
-		grid-template-columns: auto auto;
-		justify-content: space-evenly;
-	}
-
-	/* input[type="text"] {
-		width: 40vw
-	} */
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -133,4 +118,91 @@ input[type=submit]:active {
 	.row {
 		padding-left: 0em;
 	}
+}
+
+/* Footer */
+#footerContainer {
+	display: grid;
+	text-align: center;
+	justify-content: center;
+	background-color: #000;
+	color: #b6b8b6;
+	margin-top: 3em;
+}
+
+#details {
+	font-size: 1.5em;
+	padding-bottom: 2em;
+}
+
+#appointmentForm {
+	font-size: 1.75em;
+	text-align: left;
+}
+
+#browse {
+	width: 60px;
+	margin-left: 1em;
+}
+
+#formBtnDiv {
+	text-align: center;
+}
+
+#termsAndConditions {
+	background: #000;
+	color: #b6b8b6;
+	padding: 0.75em;
+}
+
+.detailsH3, .hdrApp {
+	font-size: 5vw;
+}
+
+.addParagragh {
+	font-size: 0.75em;
+	margin: 0;
+}
+
+.hdrApp {
+	font-size: 0.75em;
+}
+
+.txtInput {
+	width: 53vw;
+}
+
+.btnForm {
+	font-size: 0.55em;
+	width: 165px;
+	margin: 0.5em;
+	cursor: pointer;
+	padding: 0.5em;
+	border: none;
+	border-radius: 35px;
+}
+
+/* Media Queries */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.txtInput {
+		width: 40vw;
+	}
+}
+
+@media only screen and (min-width: 992px) {	
+	#details {
+		display: flex;
+		justify-content: space-between;
+		gap: 6em;
+		padding: 1em 0em;
+	}
+
+	.detailsH3 {
+		font-size: 1.25em;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+
 }
