@@ -24,5 +24,12 @@ function validateForm() {
     return true;
   }
     alert("You have entered an invalid email address!")
-    return (false)
+    return false;
 }
+
+// jQuery AJAX request for successful form
+$(document).ready(function() {
+  $("#btnSubmit").click(function() {
+    $(".container").load("../html/formFilled.html");
+  });
+});
