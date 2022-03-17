@@ -39,21 +39,21 @@
 	<div class="outerContainer">
 		<div class="container">
 			<h1 id="hdrBookAppointment">Book Appointment</h1>
-			<form action="#">
+			<form name="form" action="/html/formFilled.html" onsubmit="return validateForm()" method="get">
 				<div class="row">
 					<div class="col-25">
-						<label for="fname">Name</label>
+						<label for="name">Name</label>
 					</div>
 					<div class="col-75">
-						<input type="text" id="fname" name="firstname" placeholder="Your name..">
+						<input type="text" id="name" name="name" placeholder="Your name.." required>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-25">
-						<label for="lname">Email</label>
+						<label for="email">Email</label>
 					</div>
 					<div class="col-75">
-						<input type="text" id="lname" name="lastname" placeholder="Your email..">
+						<input type="text" id="email" name="email" placeholder="Your email.." required>
 					</div>
 				</div>
 				<div class="row">
@@ -61,7 +61,7 @@
 						<label for="subject">Message</label>
 					</div>
 					<div class="col-75">
-						<textarea id="subject" name="subject" placeholder="Tattoo details.." style="height:200px"></textarea>
+						<textarea id="subject" name="subject" placeholder="Tattoo details.." style="height:200px" required></textarea>
 					</div>
 				</div>
 				<div class="row" id="uploadContainer">
