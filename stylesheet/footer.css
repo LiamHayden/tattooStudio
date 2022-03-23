@@ -18,7 +18,7 @@
 
 #result {
 	font-size: 0.75em;
-	text-align: start;
+	text-align: center;
 }
 
 #subject {
@@ -99,6 +99,10 @@
 	#subject, .txtInput {
 		width: 100%;
 		font-size: 1em;
+	}
+
+	#result {
+		text-align: start;
 	}
 
 	#formBtnDiv {
