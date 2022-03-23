@@ -17,7 +17,7 @@ img {
   height: 300px;
 }
 
-p {
+.para {
   font-size: 1.25em;
 }
 
@@ -28,7 +28,7 @@ p {
   padding: 50px 0;
 }
 
-.container {
+.apparelContainer {
   display: grid;
   text-align: center;
   color: #b6b8b6;
