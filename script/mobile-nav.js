@@ -14,22 +14,28 @@ function navBarAnimation(x) {
   }
 }
 
-// form validaiton - form page and footer
-function validateForm() {
-  // variables
-  let email = document.forms["form"]["email"].value;
+// Email validation
+// Email regex
+const validateEmail = (email) => {
+  return email.match(
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  );
+};
 
-  // functionality
-  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+// Validate email
+const validate = () => {
+  const $result = $('#result');
+  const email = $('#email').val();
+  $result.text('');
+
+  if (validateEmail(email)) {
+    $(".container").load("../html/formFilled.html" || "html/formFilled.html");
     return true;
-  }
-    alert("You have entered an invalid email address!")
+  } else {
+    $result.text(email + ' is not valid :(');
+    $result.css('color', 'red');
     return false;
+  }
 }
 
-// jQuery AJAX request for successful form
-$(document).ready(function() {
-  $("#btnSubmit").click(function() {
-    $(".container").load("../html/formFilled.html");
-  });
-});
+$('#btnSubmit').on('click', validate);

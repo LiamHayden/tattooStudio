@@ -46,7 +46,7 @@
 	<div class="outerContainer">
 		<div class="container">
 			<h1 id="hdrBookAppointment">Book Appointment</h1>
-			<form name="form" action="#" onsubmit="validateForm()" method="get">
+			<form name="form" method="get">
 				<div class="row">
 					<div class="col-25">
 						<label for="name" id="lblName">Name</label>
@@ -61,6 +61,7 @@
 					</div>
 					<div class="col-75">
 						<input type="text" id="email" name="email" placeholder="Your email.." required>
+						<p id="result"></p>
 					</div>
 				</div>
 				<div class="row">
@@ -82,10 +83,10 @@
 				<br>
 				<div id="btnContainer">
 					<div>
-						<input type="submit" value="Submit" id="btnSubmit">
+						<input type="button" value="Submit" id="btnSubmit" class="btn">
 					</div>
-					<div class="btn">
-						<input type="submit" value="Pay Deposit" id="btnDeposit">
+					<div>
+						<input type="button" value="Pay Deposit" id="btnDeposit" class="btn">
 					</div>
 				</div>
 			</form>
