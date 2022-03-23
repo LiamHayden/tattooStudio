@@ -15,10 +15,6 @@ p {
 	font-size: 0.95em;
 }
 
-#contact {
-	padding-right: 1.5em;
-}
-
 #about {
 	display: flex;
 	flex-direction: column;
