@@ -14,7 +14,7 @@ function navBarAnimation(x) {
   }
 }
 
-// form validaiton - form page and footer
+// form validaiton - form pag and footer
 function validateForm() {
   // variables
   let email = document.forms["form"]["email"].value;
