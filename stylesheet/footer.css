@@ -16,6 +16,11 @@
 	font-size: 1.75em;
 } 
 
+#result {
+	font-size: 0.75em;
+	text-align: start;
+}
+
 #subject {
 	width: 53vw;
 }
