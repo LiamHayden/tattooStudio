@@ -133,7 +133,15 @@ input[type=submit]:active {
 #details {
 	font-size: 1.5em;
 	padding-bottom: 2em;
+	margin: auto;
 }
+
+/* \Google Map */
+#googleMap {
+	width: 350px;
+	height: 400px;
+}
+
 
 #appointmentForm {
 	font-size: 1.75em;
