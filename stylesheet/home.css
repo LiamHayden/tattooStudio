@@ -37,6 +37,13 @@ p {
 	border: none;
 	border-radius: 35px;
 	box-shadow: 1px 1px #000;
+
+	-webkit-cursor: pointer;
+	-webkit-font-size: 1.05em;
+	-webkit-padding: 0.5em;
+	-webkit-border: none;
+	-webkit-border-radius: 35px;
+	-webkit-box-shadow: 1px 1px #000;
 }
 
 #btnAppointment:Active {
