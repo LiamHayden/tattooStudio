@@ -72,6 +72,13 @@
 	padding: 0.5em;
 	border: none;
 	border-radius: 35px;
+	-webkit-font-size: 0.55em;
+	-webkit-width: 165px;
+	-webkit-margin: 0.5em;
+	-webkit-cursor: pointer;
+	-webkit-padding: 0.5em;
+	-webkit-border: none;
+	-webkit-border-radius: 35px;
 }
 
 /* Media Queries */
